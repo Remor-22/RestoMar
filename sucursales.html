@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursales - Resto Grill</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .sucursal-item {
+            transition: box-shadow 0.3s, background 0.3s;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .sucursal-item:hover {
+            box-shadow: 0 0 20px #ff8c2b, 0 0 10px #ff8c2b inset;
+            background: rgba(255, 140, 43, 0.15);
+        }
+
+        /* Cambia el color y tamaño de los textos de sucursales */
+        .sucursales-title {
+            color: #f8770e;
+            font-size: 2rem;
+        }
+        .sucursal-item h2 {
+            color: #ea9a57;
+            font-size: 1.3rem;
+        }
+        .sucursal-item p {
+            color: #ea9a57;
+            font-size: 1rem;
+        }
+    </style>
+    <link rel="icon" href="assets/images/logorestomarcopia2.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER ORGANISM -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logorestomarcopia2.png" alt="Resto Mar Logo" style="height: 50px; width: auto;">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="nav-link">Restaurant</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="nav-link active">Sucursales</a></li>
+                <li><a href="pedidos.html" class="nav-link">Pedidos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="reservas.html" class="btn btn-primary">Reservar</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SUCURSALES SECTION ORGANISM -->
+    <section class="sucursales-section">
+      <div class="sucursales-overlay"></div>
+      <div class="sucursales-container">
+        <h1 class="sucursales-title">Sucursales</h1>
+        <div class="sucursales-list">
+          <div class="sucursal-item">
+            <div>
+              <h2>Sucursal central 1</h2>
+              <p>Dirección: Calle Ladislao Cabrera y Esteban Arze Edificio Sanvale II, Cochabamba</p>
+            </div>
+            <a href="https://maps.app.goo.gl/bfykcFXKQuA8stek7" class="btn-ubicacion">Encuentranos!</a>
+          </div>
+          <div class="sucursal-item">
+            <div>
+              <h2>Sucursal Central 2</h2>
+              <p>Dirección: Calle Ladislao Cabrera entre 25 de Mayo y Esteban Arze</p>
+            </div>
+            <a href="https://maps.app.goo.gl/Z7GneqDKJsijdxvd8" class="btn-ubicacion">Encuentranos!</a>
+          </div>
+          <div class="sucursal-item">
+            <div>
+              <h2>Sucursal 3</h2>
+              <p>Dirección: Av. Libertador Bolívar, Plaza de Cala Cala Edificio VyV Planta Baja</p>
+            </div>
+            <a href="https://maps.app.goo.gl/g114y8eE2NVJAVx59" class="btn-ubicacion">Encuentranos!</a>
+          </div>
+          <div class="sucursal-item">
+            <div>
+              <h2>Sucursal 4</h2>
+              <p>Dirección: Av. Panamericana entre Gral. Alvarez, Zona Sud</p>
+            </div>
+            <a href="https://maps.app.goo.gl/KjZyzeEUETyYjRmc7" class="btn-ubicacion">Encuentranos!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER ORGANISM -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Costado izquierdo: Menú principal -->
+        <div class="footer-left">
+            <ul class="footer-menu">
+                <li><a href="index.html" class="footer-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="footer-link">Restaurant</a></li>
+                <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="footer-link">Sucursales</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales (centro) -->
+        <div class="footer-socials">
+            <a href="index.html" class="social-link">
+        <img src="assets/images/logorestomarcopia2.png" alt="Logo Resto Mar" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61580388682604" target="_blank" class="social-link">
+                <img src="assets/images/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/restomar2025?igsh=MWZhNnl3b2ZmZXZiMA%3D%3D&utm_source=qr" target="_blank" class="social-link">
+                <img src="assets/images/instagramlogo3.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://t.me/+ygngj0rvQPgwZjMx" target="_blank" class="social-link">
+                <img src="assets/images/telegramlogo.png" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+
+        <!-- Costado derecho: Enlaces adicionales -->
+        <div class="footer-right">
+            <ul class="footer-menu">
+                <li><a href="assets/images/Menu1.pdf" target="_blank" class="footer-link">Menu</a></li>
+                <li><a href="lugar.html" class="footer-link">Lugar</a></li>
+                <li><a href="pedidos.html" class="footer-link">Pedidos</a></li>
+                <li><a href="reservas.html" class="footer-link">Reservar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-rights">
+        <p>© 2025 Resto Mar. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Enlaces legales -->
+    <div class="footer-links">
+        <a href="assets/images/Políticas de Privacidad.pdf" target="_blank" class="footer-link">Política de Privacidad</a>
+        <span>|</span>
+        <a href="assets/images/Términos y Condiciones.pdf" target="_blank" class="footer-link">Términos y Condiciones</a>
+        <span>|</span>
+        <a href="assets/images/AVISO LEGAL.pdf" target="_blank" class="footer-link">Aviso Legal</a>
+        <span>|</span>
+        <a href="assets/images/Política de Cookies.pdf" target="_blank" class="footer-link">Cookies</a>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+const mobileMenu = document.getElementById('mobileMenu');
+const navMenu = document.getElementById('navMenu');
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+</script>
+</body>
+</html>

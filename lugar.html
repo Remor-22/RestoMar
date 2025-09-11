@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugar Central - Resto Mar</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/organisms/_lugar-central.css">
+    <style>
+        .lugar-central {
+            justify-content: center;
+        }
+
+        .lugar-central-mapa iframe {
+            width: 600px;
+            height: 350px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .lugar-central-visitanos {
+            color: #fff;
+            font-size: 2vw;
+            font-weight: 500;
+            margin-top: 0.5em;
+            text-shadow: 0 2px 16px #000;
+        }
+
+        @media (max-width: 900px) {
+            .lugar-central-title { font-size: 2.2rem; }
+            .lugar-central-direccion { font-size: 1.5rem; }
+            .lugar-central-mapa iframe { width: 95vw; height: 250px; }
+            .lugar-central-visitanos { font-size: 1.2rem; }
+        }
+
+        @media (max-width: 600px) {
+            .lugar-central { padding-top: 60px; }
+            .lugar-central-title { font-size: 1.3rem; }
+            .lugar-central-direccion { font-size: 1rem; }
+            .lugar-central-mapa iframe { width: 98vw; height: 180px; }
+            .lugar-central-visitanos { font-size: 1rem; }
+        }
+    </style>
+    <link rel="icon" href="assets/images/logorestomarcopia2.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER ORGANISM -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logorestomarcopia2.png" alt="Resto Mar Logo" style="height: 50px; width: auto;">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="nav-link">Restaurant</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="nav-link">Sucursales</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="reservas.html" class="btn btn-primary">Reservar</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="lugar-central">
+        <h1 class="lugar-central-title">Lugar Central</h1>
+        <div class="lugar-central-direccion">C. Ladislao Cabrera entre Esteban Arce</div>
+        <div class="lugar-central-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.386259533694!2d-66.15543423689601!3d-17.39737812045389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373f0c174bc77%3A0x629052a48a3c3bc0!2sCipec!5e0!3m2!1ses-419!2sbo!4v1756686911278!5m2!1ses-419!2sbo" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="lugar-central-visitanos">¡Visítanos!</div>
+    </div>
+    <!-- FOOTER ORGANISM -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Costado izquierdo: Menú principal -->
+        <div class="footer-left">
+            <ul class="footer-menu">
+                <li><a href="index.html" class="footer-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="footer-link">Restaurant</a></li>
+                <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="footer-link">Sucursales</a></li>
+                <li><a href="pedidos.html" class="nav-link">Pedidos</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales (centro) -->
+        <div class="footer-socials">
+            <a href="index.html" class="social-link">
+        <img src="assets/images/logorestomarcopia2.png" alt="Logo Resto Mar" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61580388682604" target="_blank" class="social-link">
+                <img src="assets/images/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/restomar2025?igsh=MWZhNnl3b2ZmZXZiMA%3D%3D&utm_source=qr" target="_blank" class="social-link">
+                <img src="assets/images/instagramlogo3.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://t.me/+ygngj0rvQPgwZjMx" target="_blank" class="social-link">
+                <img src="assets/images/telegramlogo.png" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+
+        <!-- Costado derecho: Enlaces adicionales -->
+        <div class="footer-right">
+            <ul class="footer-menu">
+                <li><a href="assets/images/Menu1.pdf" target="_blank" class="footer-link">Menu</a></li>
+                <li><a href="lugar.html" class="footer-link active">Lugar</a></li>
+                <li><a href="pedidos.html" class="footer-link">Pedidos</a></li>
+                <li><a href="reservas.html" class="footer-link">Reservar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-rights">
+        <p>© 2025 Resto Mar. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Enlaces legales -->
+    <div class="footer-links">
+        <a href="assets/images/Políticas de Privacidad.pdf" target="_blank" class="footer-link">Política de Privacidad</a>
+        <span>|</span>
+        <a href="assets/images/Términos y Condiciones.pdf" target="_blank" class="footer-link">Términos y Condiciones</a>
+        <span>|</span>
+        <a href="assets/images/AVISO LEGAL.pdf" target="_blank" class="footer-link">Aviso Legal</a>
+        <span>|</span>
+        <a href="assets/images/Política de Cookies.pdf" target="_blank" class="footer-link">Cookies</a>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+const mobileMenu = document.getElementById('mobileMenu');
+const navMenu = document.getElementById('navMenu');
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+</script>
+</body>
+</html>

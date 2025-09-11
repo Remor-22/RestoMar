@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Resto Grill</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/logorestomarcopia2.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER ORGANISM -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logorestomarcopia2.png" alt="Resto Mar Logo" style="height: 50px; width: auto;">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="nav-link">Restaurant</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="nav-link">Sucursales</a></li>
+                <li><a href="pedidos.html" class="nav-link">Pedidos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="reservas.html" class="btn btn-primary">Reservar</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- RESERVA SECTION ORGANISM -->
+    <section class="reserva-section">
+        <div class="reserva-container">
+            <nav class="breadcrumb">
+                <a href="index.html">Inicio</a> &gt; <span>RESERVAS</span>
+            </nav>
+            <h1 class="reserva-title">RESERVA TU LUGAR</h1>
+            <p class="reserva-desc">
+                Para poder ofrecerte la mejor mesa, selecciona la cantidad de personas, la fecha, el horario y tu número de celular.
+            </p>
+            <form class="reserva-form" id="reservaForm" action="https://formsubmit.co/marche.dev00@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nueva Reserva - Resto Mar">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <label for="grupo">Tamaño del grupo</label>
+                <select id="grupo" name="grupo" required>
+                    <option value="">Selecciona</option>
+                    <option>1 persona</option>
+                    <option>2 personas</option>
+                    <option>3 personas</option>
+                    <option>4 personas</option>
+                    <option>5 personas</option>
+                    <option>6 personas</option>
+                    <option>7 personas</option>
+                    <option>8 personas</option>
+                </select>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Horario</label>
+                <select id="hora" name="hora" required>
+                    <option value="">Selecciona</option>
+                    <!-- Generar horarios desde las 12:00 PM hasta las 11:00 PM -->
+                    <script>
+                        const selectHora = document.getElementById('hora');
+                        for (let h = 12; h <= 23; h++) {
+                            for (let m = 0; m < 60; m += 15) {
+                                const hora = `${h}:${m.toString().padStart(2, '0')}`;
+                                const option = document.createElement('option');
+                                option.value = hora;
+                                option.textContent = hora;
+                                selectHora.appendChild(option);
+                            }
+                        }
+                    </script>
+                </select>
+
+                <label for="celular">Número de celular</label>
+                <input type="tel" id="celular" name="celular" placeholder="Ej: +591 70000000" required>
+
+                <button type="submit" class="btn btn-secondary reserva-submit">Reservar ahora</button>
+               
+            <footer class="reserva-footer">
+                <a href="assets/images/Políticas de Privacidad.pdf" target="_blank" class="footer-link">Política de Privacidad</a>
+        <span>|</span>
+                © 2025 Creado por Resto Mar
+            </footer>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

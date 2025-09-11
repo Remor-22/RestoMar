@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Mar - Un Viaje Gastronomico de Bolivia al Mundo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/images/logorestomarcopia2.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER ORGANISM -->
+    <header class="header" id="header">
+    <nav class="nav-container">
+        <a href="#" class="logo">
+            <img src="assets/images/logorestomarcopia2.png" alt="Resto Mar" style="height: 50px; width: auto;">
+        </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                <li><a href="restaurante.html" class="nav-link">Restaurant</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="nav-link">Sucursales</a></li>
+                <li><a href="pedidos.html" class="nav-link">Pedidos</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="reservas.html" class="btn btn-primary">Reservar</a>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION ORGANISM -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Resto<br>Mar</h1>
+                <h2 class="hero-subtitle">Un Viaje Gastronomico de Bolivia al Mundo</h2>
+                <p class="hero-description">
+                    Restaurant con variedad de platos Mar y Tierra, como también una variedad de bebidas y postres.
+                    con un ambiente acogedor y un servicio excepcional, te invitamos a disfrutar de una experiencia culinaria única.
+                </p>
+                <a href="#" class="btn btn-secondary glow" id="playVideoBtn">
+    Más Información
+    <span>→</span>
+</a>
+
+<!-- Video oculto inicialmente -->
+<div id="videoModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000;">
+    <video id="infoVideo" width="800" controls style="border-radius: 8px; z-index: 1001; max-width: 90vw; max-height: 80vh;">
+        <source src="assets/videos/videorestomar.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+</div>
+            </div>
+            
+            <div class="hero-image">
+                <!-- Logo en vez del dibujo decorativo -->
+                <img src="assets/images/logorestomarcopia2.png" alt="Logo Resto Mar" style="max-width: 400px; width: 100%; height: auto; filter: drop-shadow(0 10px 30px rgba(255,140,66,0.3)); border-radius: 16px;" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION ORGANISM -->
+    <section class="features-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="assets/images/Menu1.pdf" target="_blank" class="feature-card fade-in-up glow">
+        <h3>Menu</h3>
+        <p>Catalogo de Comidas (Ver PDF)</p>
+    </a>
+    <a href="lugar.html" class="feature-card fade-in-up glow">
+        <h3>Lugar</h3>
+        <p>Centro del Lugar</p>
+    </a>
+    <a href="pedidos.html" class="feature-card fade-in-up glow">
+        <h3>Pedidos</h3>
+        <p>pedidos y Reserva</p>
+    </a>
+</section>
+
+    <!-- FOOTER ORGANISM -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Costado izquierdo: Menú principal -->
+        <div class="footer-left">
+            <ul class="footer-menu">
+                <li><a href="index.html" class="footer-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="footer-link">Restaurant</a></li>
+                <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="footer-link">Sucursales</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales (centro) -->
+        <div class="footer-socials">
+            <a href="index.html" class="social-link">
+                <img src="assets/images/logorestomarcopia2.png" alt="Logo Resto Mar" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61580388682604" target="_blank" class="social-link">
+                <img src="assets/images/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/restomar2025?igsh=MWZhNnl3b2ZmZXZiMA%3D%3D&utm_source=qr" target="_blank" class="social-link">
+                <img src="assets/images/instagramlogo3.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://t.me/+ygngj0rvQPgwZjMx" target="_blank" class="social-link">
+                <img src="assets/images/telegramlogo.png" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+
+        <!-- Costado derecho: Enlaces adicionales -->
+        <div class="footer-right">
+            <ul class="footer-menu">
+                <li><a href="assets/images/Menu1.pdf" target="_blank" class="footer-link">Menu</a></li>
+                <li><a href="lugar.html" class="footer-link">Lugar</a></li>
+                <li><a href="pedidos.html" class="footer-link">Pedidos</a></li>
+                <li><a href="reservas.html" class="footer-link">Reservar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-rights">
+        <p>© 2025 Resto Mar. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Enlaces legales -->
+    <div class="footer-links">
+        <a href="assets/images/Políticas de Privacidad.pdf" target="_blank" class="footer-link">Política de Privacidad</a>
+        <span>|</span>
+        <a href="assets/images/Términos y Condiciones.pdf" target="_blank" class="footer-link">Términos y Condiciones</a>
+        <span>|</span>
+        <a href="assets/images/AVISO LEGAL.pdf" target="_blank" class="footer-link">Aviso Legal</a>
+        <span>|</span>
+        <a href="assets/images/Política de Cookies.pdf" target="_blank" class="footer-link">Cookies</a>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+const playVideoBtn = document.getElementById('playVideoBtn');
+const videoModal = document.getElementById('videoModal');
+const infoVideo = document.getElementById('infoVideo');
+
+// Mostrar el video al hacer clic en el botón
+playVideoBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    videoModal.style.display = 'flex';
+    infoVideo.play();
+});
+
+// Cerrar el video al hacer clic fuera del video
+videoModal.addEventListener('click', (e) => {
+    if (e.target === videoModal) {
+        videoModal.style.display = 'none';
+        infoVideo.pause();
+        infoVideo.currentTime = 0; // Reiniciar el video
+    }
+});
+
+const mobileMenu = document.getElementById('mobileMenu');
+const navMenu = document.getElementById('navMenu');
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+</script>
+</body>
+</html>

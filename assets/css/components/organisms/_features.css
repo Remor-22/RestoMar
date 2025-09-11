@@ -1,0 +1,53 @@
+/* ORGANISMS - Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: url('../../images/fondoabajo1.jpg') center/cover no-repeat; /* Ruta de la imagen */
+    background-size: cover; /* Asegúrate de que el fondo cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    width: 100%; /* Asegúrate de que la sección ocupe todo el ancho */
+}
+
+/*contactos*/
+
+.feature-card {
+    min-width: 220px;
+    max-width: 220px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 1.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 4px 24px rgba(255,140,66,0.15);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        background-size: contain; /* Ajusta el tamaño del fondo para pantallas pequeñas */
+    }
+}

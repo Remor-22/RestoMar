@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Resto Grill</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components/organisms/_pedidos-section.css">
+    <link rel="icon" href="assets/images/logorestomarcopia2.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER ORGANISM -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logorestomarcopia2.png" alt="Resto Mar Logo" style="height: 50px; width: auto;">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="nav-link">Restaurant</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="nav-link">Sucursales</a></li>
+                <li><a href="pedidos.html" class="nav-link active">Pedidos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="reservas.html" class="btn btn-primary">Reservar</a>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pedidos-section">
+        <div class="menu-pedidos">
+            <div class="categorias">
+                <button class="categoria-btn active" data-cat="entradas">Entradas</button>
+                <button class="categoria-btn" data-cat="nacionales">Platos Nacionales</button>
+                <button class="categoria-btn" data-cat="internacionales">Internacionales</button>
+                <button class="categoria-btn" data-cat="mar">Especialidades del Mar</button>
+                <button class="categoria-btn" data-cat="postres">Postres</button>
+                <button class="categoria-btn" data-cat="bebidas">Bebidas</button>
+            </div>
+            <div class="productos-grid" id="productosGrid">
+                <!-- Los productos se llenan por JS o puedes pegarlos aquí estáticamente -->
+                <!-- Ejemplo de producto -->
+                <!--
+                <div class="producto-card" data-cat="entradas">
+                    <img src="assets/images/ensalada.png" alt="Ensalada fresca mediterránea">
+                    <h3>Ensalada fresca mediterránea</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 45</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                -->
+                <!-- ENTRADAS -->
+                <div class="producto-card" data-cat="entradas">
+                    <img src="assets/images/ensalada.jpg" alt="Ensalada fresca mediterránea">
+                    <h3>Ensalada fresca mediterránea</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 45</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="entradas">
+                    <img src="assets/images/sopa-mani.jpg" alt="Sopa de maní tradicional">
+                    <h3>Sopa de maní tradicional</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 35</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="entradas">
+                    <img src="assets/images/Carpaccio.jpeg" alt="Carpaccio de res con parmesano">
+                    <h3>Carpaccio de res con parmesano</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 70</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="entradas">
+                    <img src="assets/images/antipasto-mariscos.jpg" alt="Antipasto de mariscos">
+                    <h3>Antipasto de mariscos</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 80</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <!-- PLATOS NACIONALES -->
+                <div class="producto-card" data-cat="nacionales">
+                    <img src="assets/images/majadito.jpg" alt="Majadito batido">
+                    <h3>Majadito batido (pollo o res)</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 55</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="nacionales">
+                    <img src="assets/images/pique-macho.jpg" alt="Pique macho tradicional">
+                    <h3>Pique macho tradicional</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 75</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="nacionales">
+                    <img src="assets/images/silpancho.jpg" alt="Silpancho cochabambino">
+                    <h3>Silpancho cochabambino</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 65</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="nacionales">
+                    <img src="assets/images/sopa-mani-costilla.jpg" alt="Sopa de maní con costilla">
+                    <h3>Sopa de maní con costilla</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 40</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="nacionales">
+                    <img src="assets/images/chairo.jpg" alt="Chairo paceño">
+                    <h3>Chairo paceño</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 38</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <!-- INTERNACIONALES -->
+                <div class="producto-card" data-cat="internacionales">
+                    <img src="assets/images/carbonara.jpg" alt="Spaghetti a la carbonara">
+                    <h3>Spaghetti a la carbonara</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 70</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="internacionales">
+                    <img src="assets/images/risotto-mariscos.jpg" alt="Risotto de mariscos">
+                    <h3>Risotto de mariscos</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 90</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="internacionales">
+                    <img src="assets/images/paella.jpg" alt="Paella española">
+                    <h3>Paella española (para 2 personas)</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 160</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="internacionales">
+                    <img src="assets/images/filete-mignon.jpg" alt="Filete mignon con salsa de vino">
+                    <h3>Filete mignon con salsa de vino</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 120</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="internacionales">
+                    <img src="assets/images/pollo-teriyaki.webp" alt="Pollo teriyaki con arroz jazmín">
+                    <h3>Pollo teriyaki con arroz jazmín</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 85</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <!-- MAR -->
+                <div class="producto-card" data-cat="mar">
+                    <img src="assets/images/salmon.jpg" alt="Salmón a la parrilla con vegetales">
+                    <h3>Salmón a la parrilla con vegetales</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 110</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="mar">
+                    <img src="assets/images/ceviche.webp" alt="Ceviche mixto peruano">
+                    <h3>Ceviche mixto peruano</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 95</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="mar">
+                    <img src="assets/images/camarones-ajillo.jpg" alt="Camarones al ajillo">
+                    <h3>Camarones al ajillo</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 120</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="mar">
+                    <img src="assets/images/pescado-horno.jpg" alt="Pescado al horno estilo mediterráneo">
+                    <h3>Pescado al horno estilo mediterráneo</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 100</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <!-- POSTRES -->
+                <div class="producto-card" data-cat="postres">
+                    <img src="assets/images/tiramisu.jpg" alt="Tiramisu casero">
+                    <h3>Tiramisu casero</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 40</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="postres">
+                    <img src="assets/images/suspiro-limeno.jpg" alt="Suspiro limeño">
+                    <h3>Suspiro limeño</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 35</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="postres">
+                    <img src="assets/images/helados.jpg" alt="Helados artesanales">
+                    <h3>Helados artesanales</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 25</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="postres">
+                    <img src="assets/images/brownie-helado.webp" alt="Brownie con helado">
+                    <h3>Brownie con helado</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 38</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <!-- BEBIDAS -->
+                <div class="producto-card" data-cat="bebidas">
+                    <img src="assets/images/refrescos.webp" alt="Refrescos naturales">
+                    <h3>Refrescos naturales</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 18</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="bebidas">
+                    <img src="assets/images/cocteles.jpg" alt="Cocteles clásicos">
+                    <h3>Cocteles clásicos</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 30</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="bebidas">
+                    <img src="assets/images/vino.jpg" alt="Vinos de reserva">
+                    <h3>Vinos de reserva (copa/botella)</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 45 / 280</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="bebidas">
+                    <img src="assets/images/cerveza.webp" alt="Cervezas artesanales">
+                    <h3>Cervezas artesanales</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 25</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+                <div class="producto-card" data-cat="bebidas">
+                    <img src="assets/images/agua.jpg" alt="Agua mineral">
+                    <h3>Agua mineral</h3>
+                    <div class="precio-add">
+                        <span class="precio">Bs. 10</span>
+                        <button class="add-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orden-pedidos">
+            <h2>Nueva orden</h2>
+            <form id="pedidoForm" class="pedido-form" action="https://formsubmit.co/marche.dev00@gmail.com" method="POST">
+    <input type="text" name="cliente" placeholder="Nombre del cliente" required>
+    <input type="hidden" name="_subject" value="Nuevo Pedido - Resto Mar">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <div class="pedido-lista">
+        <!-- Aquí se agregan los items del pedido dinámicamente -->
+    </div>
+    <div class="pedido-total">
+        <span>Total:</span>
+        <span id="totalPedido">Bs. 0</span>
+        <input type="hidden" name="total" id="hiddenTotal">
+    </div>
+    <div class="ubicacion-group">
+        <label for="ubicacion">Ubicación de entrega</label>
+        <input type="text" id="ubicacion" name="ubicacion" placeholder="Dirección o referencia">
+        <button type="button" class="btn btn-secondary" id="btn-ubicacion-actual">
+            Usar ubicación actual
+        </button>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar pedido</button>
+</form>
+        </div>
+    </section>
+    <!-- FOOTER ORGANISM -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Costado izquierdo: Menú principal -->
+        <div class="footer-left">
+            <ul class="footer-menu">
+                <li><a href="index.html" class="footer-link">Inicio</a></li>
+                <li><a href="restaurante.html" class="footer-link">Restaurant</a></li>
+                <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                <li><a href="sucursales.html" class="footer-link">Sucursales</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes sociales (centro) -->
+        <div class="footer-socials">
+            <a href="index.html" class="social-link">
+                <img src="assets/images/logorestomarcopia2.png" alt="Logo Resto Mar" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61580388682604" target="_blank" class="social-link">
+                <img src="assets/images/facebooklogo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/restomar2025?igsh=MWZhNnl3b2ZmZXZiMA%3D%3D&utm_source=qr" target="_blank" class="social-link">
+                <img src="assets/images/instagramlogo3.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://t.me/+ygngj0rvQPgwZjMx" target="_blank" class="social-link">
+                <img src="assets/images/telegramlogo.png" alt="Telegram" class="social-icon">
+            </a>
+        </div>
+
+        <!-- Costado derecho: Enlaces adicionales -->
+        <div class="footer-right">
+            <ul class="footer-menu">
+                <li><a href="assets/images/Menu1.pdf" target="_blank" class="footer-link">Menu</a></li>
+                <li><a href="lugar.html" class="footer-link">Lugar</a></li>
+                <li><a href="pedidos.html" class="footer-link">Pedidos</a></li>
+                <li><a href="reservas.html" class="footer-link">Reservar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-rights">
+        <p>© 2025 Resto Mar. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Enlaces legales -->
+    <div class="footer-links">
+        <a href="assets/images/Políticas de Privacidad.pdf" target="_blank" class="footer-link">Política de Privacidad</a>
+        <span>|</span>
+        <a href="assets/images/Términos y Condiciones.pdf" target="_blank" class="footer-link">Términos y Condiciones</a>
+        <span>|</span>
+        <a href="assets/images/AVISO LEGAL.pdf" target="_blank" class="footer-link">Aviso Legal</a>
+        <span>|</span>
+        <a href="assets/images/Política de Cookies.pdf" target="_blank" class="footer-link">Cookies</a>
+    </div>
+</footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+    document.getElementById('btn-ubicacion-actual').onclick = function(e) {
+        e.preventDefault();
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.getElementById('ubicacion').value =
+                    position.coords.latitude + ', ' + position.coords.longitude;
+            }, function() {
+                alert('No se pudo obtener la ubicación.');
+            });
+        } else {
+            alert('Geolocalización no soportada.');
+        }
+    };
+
+    // Filtro de categorías (opcional, si quieres que funcione el cambio de categoría)
+    document.querySelectorAll('.categoria-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.categoria-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const cat = this.getAttribute('data-cat');
+            document.querySelectorAll('.producto-card').forEach(card => {
+                card.style.display = card.getAttribute('data-cat') === cat ? 'block' : 'none';
+            });
+        });
+    });
+    // Mostrar solo la categoría activa al cargar
+    window.addEventListener('DOMContentLoaded', () => {
+        const activeCat = document.querySelector('.categoria-btn.active').getAttribute('data-cat');
+        document.querySelectorAll('.producto-card').forEach(card => {
+            card.style.display = card.getAttribute('data-cat') === activeCat ? 'block' : 'none';
+        });
+    });
+
+    const mobileMenu = document.getElementById('mobileMenu');
+const navMenu = document.getElementById('navMenu');
+
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+    </script>
+    <script src="assets/js/main.js"></script>
+<script src="assets/js/components/pedidos.js"></script>
+<script src="assets/js/components/header.js"></script>
+</body>
+</html>

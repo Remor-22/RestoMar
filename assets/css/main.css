@@ -1,0 +1,96 @@
+/* Importación de todos los estilos */
+@import url('base/_reset.css');
+@import url('base/_tokens.css');
+
+/* Atoms */
+@import url('components/atoms/_buttons.css');
+@import url('components/atoms/_links.css');
+@import url('components/atoms/_icons.css');
+
+/* Molecules */
+@import url('components/molecules/_logo.css');
+@import url('components/molecules/_navigation.css');
+@import url('components/molecules/_hero-content.css');
+@import url('components/molecules/_cards.css');
+
+/* Organisms */
+@import url('components/organisms/_header.css');
+@import url('components/organisms/_hero.css');
+@import url('components/organisms/_features.css');
+@import url('components/organisms/_reserva-section.css');
+@import url('components/organisms/_sucursales-section.css');
+@import url('components/organisms/_lugar-section.css');
+@import url('components/organisms/_lugar-central.css');
+@import url('components/organisms/_footer.css');
+@import url('components/organisms/_contacto_section.css');
+
+/* Utilidades */
+@import url('components/_animations.css');
+@import url('components/_effects.css');
+@import url('components/_responsive.css');
+
+.hero-section {
+    margin-top: 80px; /* Ajusta el valor si tu header es más alto o más bajo */
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+    padding: 0 2vw;
+  }
+}
+
+@media (max-width: 992px) {
+  header, .header, .footer, .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-content, .features, .cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 0 1vw;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .navigation ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cards, .features, .sucursales-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .footer, .header {
+    padding: 1rem 0.5rem;
+  }
+  .logo img {
+    width: 90px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.reserva-submit {
+    text-align: center;
+    display: block;
+    width: 100%;
+}

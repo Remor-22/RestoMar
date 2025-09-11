@@ -1,0 +1,68 @@
+/* Fondo solo para la sección lugar-central */
+.lugar-central {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url('../../images/lugarcentral.jpg') center/cover no-repeat, rgba(0,0,0,0.44);
+	background-blend-mode: darken;
+	padding-top: 90px;
+	padding-bottom: 40px;
+}
+
+.lugar-central-title {
+	color: #fff;
+	font-size: 4vw;
+	font-weight: 700;
+	margin: 0 0 0.5em 0;
+	text-shadow: 0 2px 16px #000;
+}
+
+.lugar-central-direccion {
+	color: #ff8000;
+	font-size: 3vw;
+	font-weight: 500;
+	margin-bottom: 1.5em;
+	text-shadow: 0 2px 16px #000;
+}
+
+.lugar-central-mapa {
+	background: rgba(30,30,30,0.85);
+	border-radius: 12px;
+	box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+	padding: 10px;
+	margin-bottom: 1.5em;
+	display: flex;
+	justify-content: center;
+}
+
+.lugar-central-mapa iframe {
+	width: 600px;
+	height: 350px;
+	border: none;
+	border-radius: 8px;
+}
+
+.lugar-central-visitanos {
+	color: #fff;
+	font-size: 2vw;
+	font-weight: 500;
+	margin-top: 0.5em;
+	text-shadow: 0 2px 16px #000;
+}
+
+@media (max-width: 900px) {
+	.lugar-central-title { font-size: 2.2rem; }
+	.lugar-central-direccion { font-size: 1.5rem; }
+	.lugar-central-mapa iframe { width: 95vw; height: 250px; }
+	.lugar-central-visitanos { font-size: 1.2rem; }
+}
+
+@media (max-width: 600px) {
+	.lugar-central { padding-top: 60px; }
+	.lugar-central-title { font-size: 1.3rem; }
+	.lugar-central-direccion { font-size: 1rem; }
+	.lugar-central-mapa iframe { width: 98vw; height: 180px; }
+	.lugar-central-visitanos { font-size: 1rem; }
+}

@@ -1,0 +1,34 @@
+/* filepath: c:\Users\Windows 11\Desktop\resto-grill\assets\css\components\atoms\_icons.css */
+/* ATOMS - Icons */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+.location-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.location-icon:hover {
+    transform: scale(1.1);
+}

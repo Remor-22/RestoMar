@@ -1,0 +1,369 @@
+.pedidos-section {
+    display: flex;
+    gap: 2rem;
+    padding: 6rem 2rem 2rem 2rem;
+    min-height: 100vh;
+    background: url('../../images/fondopedidos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.menu-pedidos {
+    flex: 2;
+}
+
+.categorias {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #ff9100 #eee;
+}
+
+.categorias::-webkit-scrollbar {
+    height: 6px;
+}
+
+.categorias::-webkit-scrollbar-thumb {
+    background: #ff9100;
+    border-radius: 4px;
+}
+
+.categoria-btn {
+    flex: 0 0 auto;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-width: 120px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.categoria-btn.active,
+.categoria-btn:hover {
+    background: #16a085;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+}
+
+.producto-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 1rem 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.producto-card img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.producto-card h3 {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.precio-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.precio {
+    background: #ff4b5c;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.add-btn {
+    background: #ffc107;
+    color: #222;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-btn:hover {
+    background: #ff9800;
+}
+
+.orden-pedidos {
+    flex: 1.2;
+    background: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    min-width: 340px;
+    max-width: 400px;
+    margin-left: -2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.orden-pedidos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.pedido-form input[type="text"] {
+    width: 100%;
+    padding: 0.6rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.pedido-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.pedido-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.pedido-item span {
+    font-size: 1rem;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #ff4b5c;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.pedido-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.ubicacion-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ubicacion-group label {
+    font-weight: 600;
+    color: #222;
+    font-size: 1rem;
+}
+
+.ubicacion-group input[type="text"] {
+    padding: 0.6rem 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #030303;
+    font-size: 1rem;
+}
+
+#btn-ubicacion-actual {
+    margin-top: 0.5rem;
+    align-self: flex-end;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    min-width: 44px;
+    min-height: 44px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividad para botones y campos de texto */
+.categoria-btn,
+.add-btn,
+#btn-ubicacion-actual,
+.pedido-form button[type="submit"] {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+    min-width: 44px;
+    min-height: 44px;
+    box-sizing: border-box;
+}
+
+.pedido-form input[type="text"],
+.ubicacion-group input[type="text"] {
+    font-size: 1rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Alineación de botones en el formulario de pedido */
+.pedido-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ubicacion-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.ubicacion-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#btn-ubicacion-actual,
+.pedido-form button[type="submit"] {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 0;
+    /* Para que ambos tengan el mismo alto y ancho */
+    display: block;
+}
+
+#btn-ubicacion-actual {
+    background: #ffc107;
+    color: #222;
+}
+
+#btn-ubicacion-actual:hover {
+    background: #ff9800;
+    color: #fff;
+}
+
+.pedido-form button[type="submit"] {
+    background: #ff9100;
+    color: #fff;
+}
+
+.pedido-form button[type="submit"]:hover {
+    background: #e67c3a;
+}
+
+/* Ejemplo para cualquier sección principal */
+.hero-section,
+.restaurante-section,
+.pedidos-section,
+.reserva-section,
+.contact-section,
+.lugar-central {
+  padding-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .hero-section,
+.restaurante-section,
+.pedidos-section,
+.reserva-section,
+.contact-section,
+.lugar-central {
+    padding-top: 70px;
+  }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+    .categoria-btn {
+        font-size: 1rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .add-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+    .pedido-form input[type="text"],
+    .ubicacion-group input[type="text"] {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.7rem;
+    }
+    .ubicacion-botones {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+}
+
+/* --- RESPONSIVE PEDIDOS --- */
+
+/* Ajuste general para móviles */
+@media (max-width: 900px) {
+    .pedidos-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 6rem 0.5rem 2rem 0.5rem;
+    }
+    .orden-pedidos {
+        margin-left: 0;
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+/* Ajuste para que el grid no se desborde en móvil */
+@media (max-width: 600px) {
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    .producto-card img {
+        width: 80px;
+        height: 60px;
+    }
+    .orden-pedidos {
+        padding: 1rem 0.5rem;
+    }
+}

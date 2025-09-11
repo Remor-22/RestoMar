@@ -1,0 +1,80 @@
+/* ORGANISMS - Hero Section */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23111" width="1200" height="800"/><circle cx="900" cy="300" r="200" fill="%23222" opacity="0.3"/><circle cx="300" cy="600" r="150" fill="%23333" opacity="0.2"/></svg>');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: url('../../images/ellipce-image.jpg') center/cover no-repeat; /* Ruta de la imagen */
+    z-index: 1;
+    clip-path: ellipse(50% 100% at 65% 50%); /* Recorta la mitad de la elipse */
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-image {
+    position: relative;
+    animation: slideInRight 1s ease-out;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--accent-orange) 0%, transparent 70%);
+    opacity: 0.3;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Ejemplo para cualquier sección principal */
+.hero-section,
+.restaurante-section,
+.pedidos-section,
+.reserva-section,
+.contact-section,
+.lugar-central {
+  padding-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .hero-section,
+  .restaurante-section,
+  .pedidos-section,
+  .reserva-section,
+  .contact-section,
+  .lugar-central {
+    padding-top: 70px;
+  }
+}

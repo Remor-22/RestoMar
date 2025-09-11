@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+                url('../../images/fondocontactos.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #ff9100;
+    margin-bottom: 1rem;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #e6e6e6;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn-submit {
+    background: #ff9100;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #e67c3a;
+}
+
+/* Footer */
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-link {
+    color: #ff9100;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+}

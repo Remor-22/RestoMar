@@ -1,0 +1,109 @@
+.restaurante-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../images/restaurant1.webp') center/cover no-repeat, rgba(0, 0, 0, 0.7);
+}
+
+.restaurante-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.restaurante-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.restaurante-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.restaurante-features {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.feature-item h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff8000;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Ejemplo para cualquier sección principal */
+.hero-section,
+.restaurante-section,
+.pedidos-section,
+.reserva-section,
+.contact-section,
+.lugar-central {
+  padding-top: 100px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .restaurante-title {
+        font-size: 2.5rem;
+    }
+
+    .feature-item h2 {
+        font-size: 2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .restaurante-features {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature-item {
+        min-width: auto;
+    }
+}

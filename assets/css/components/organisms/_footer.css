@@ -1,0 +1,141 @@
+.footer {
+    background: #1a1a1a; /* Fondo negro */
+    color: #ff9100; /* Texto naranja */
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link {
+    color: #ff9100; /* Texto naranja */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #f4d03f; /* Color dorado al pasar el mouse */
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+
+.footer-rights {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-links span {
+    color: #ff9100; /* Separador naranja */
+}
+
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    margin: 0 2rem;
+}
+
+.footer-logo img {
+    height: 64px;
+    width: auto;
+    display: block;
+}
+
+/* Footer responsivo para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right,
+    .footer-socials,
+    .footer-logo {
+        justify-content: center;
+        flex: unset;
+        margin: 0.5rem 0;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .footer-logo {
+        margin: 1rem 0;
+    }
+
+    .footer-rights,
+    .footer-links {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+.social-icon.logo-mini {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    /* Opcional: para que combine con los otros íconos */
+}

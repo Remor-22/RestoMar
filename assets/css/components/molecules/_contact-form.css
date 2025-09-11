@@ -1,0 +1,54 @@
+resto-grill/assets/css/components/molecules/_contact-form.css
+
+/* MOLECULES - Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: #222;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-orange);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-orange);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-form button:hover {
+    background: #e67c3a;
+    transform: translateY(-2px);
+}

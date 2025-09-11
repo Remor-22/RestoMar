@@ -1,0 +1,18 @@
+/* ATOMIC DESIGN - TOKENS & VARIABLES */
+:root {
+    --secondary-bg: #1a1a1a;
+    --card-bg: rgba(45, 55, 65, 0.8);
+    --accent-orange: #ff8c42;
+    --accent-gold: #f4d03f;
+    --text-primary: #ff9100;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+    --border-radius: 12px;
+    --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --shadow-heavy: 0 8px 40px rgba(0, 0, 0, 0.6);
+    --transition: all 0.3s ease;
+}
+
+body {
+    color: var(--text-primary);
+}
